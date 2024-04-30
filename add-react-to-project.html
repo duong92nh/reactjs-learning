@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReactJS</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+</head>
+
+<body>
+    <h1>Add ReactJS to website !</h1>
+
+    <script>
+        // DOM
+        const ulDOM = document.createElement("ul");
+
+        const liDOM1 = document.createElement("li");
+        liDOM1.innerText = "ReactJS";
+
+        const liDOM2 = document.createElement("li");
+        liDOM2.innerText = "React Native";
+
+        ulDOM.appendChild(liDOM1);
+        ulDOM.appendChild(liDOM2);
+
+        document.body.appendChild(ulDOM);
+
+        console.dir(h1DOM);
+        console.log(h1React);
+
+        // React
+
+        const ulReact = React.createElement(
+            "ul",
+            null,
+            React.createElement("li", null, "ReactJS"),
+            React.createElement("li", null, "React Native")
+        );
+    </script>
+</body>
+
+</html>
