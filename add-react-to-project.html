@@ -15,172 +15,37 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const blogsItems = [
-            {
-                "id": 760,
-                "title": "Sinh vi\u00ean IT \u0111i th\u1ef1c t\u1eadp t\u1ea1i doanh nghi\u1ec7p c\u1ea7n bi\u1ebft nh\u1eefng g\u00ec?",
-                "slug": "sinh-vien-it-di-thuc-tap-tai-doanh-nghiep-can-biet-nhung-gi",
-                "image": "https:\/\/i.ytimg.com\/vi\/YH-E4Y3EaT4\/maxresdefault.jpg",
-                "video": "YH-E4Y3EaT4",
-                "duration": 2091,
-                "yt_view_count": 247553,
-                "yt_comment_count": 237,
-                "yt_like_count": 6212,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/YH-E4Y3EaT4\/maxresdefault.jpg",
-                "video_url": null
-            },
-            {
-                "id": 456,
-                "title": "Ph\u01b0\u01a1ng ph\u00e1p h\u1ecdc l\u1eadp tr\u00ecnh c\u1ee7a Admin F8?",
-                "slug": "phuong-phap-hoc-lap-trinh-cua-admin-f8",
-                "image": "https:\/\/i.ytimg.com\/vi\/DpvYHLUiZpc\/maxresdefault.jpg",
-                "video": "DpvYHLUiZpc",
-                "duration": 1446,
-                "yt_view_count": 124228,
-                "yt_comment_count": 339,
-                "yt_like_count": 6072,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/DpvYHLUiZpc\/maxresdefault.jpg",
-                "video_url": null
-            },
-            {
-                "id": 696,
-                "title": "\"Code Thi\u1ebfu Nhi Battle\" Tranh Gi\u00e0nh Tr\u00e0 S\u1eefa Size L",
-                "slug": "code-thieu-nhi-battle-tranh-gianh-tra-sua-size-l",
-                "image": "https:\/\/i.ytimg.com\/vi\/sgq7BH6WxL8\/maxresdefault.jpg",
-                "video": "sgq7BH6WxL8",
-                "duration": 1510,
-                "yt_view_count": 277186,
-                "yt_comment_count": 179,
-                "yt_like_count": 5682,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/sgq7BH6WxL8\/maxresdefault.jpg",
-                "video_url": null
-            },
-            {
-                "id": 44,
-                "title": "B\u1ea1n s\u1ebd l\u00e0m \u0111\u01b0\u1ee3c g\u00ec sau kh\u00f3a h\u1ecdc?",
-                "slug": "ban-se-lam-duoc-gi-sau-khoa-hoc",
-                "image": "https:\/\/i.ytimg.com\/vi\/R6plN3FvzFY\/maxresdefault.jpg",
-                "video": "R6plN3FvzFY",
-                "duration": 195,
-                "yt_view_count": 918376,
-                "yt_comment_count": 139,
-                "yt_like_count": 5547,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/R6plN3FvzFY\/maxresdefault.jpg",
-                "video_url": null
-            },
-            {
-                "id": 692,
-                "title": "Javascript c\u00f3 th\u1ec3 l\u00e0m \u0111\u01b0\u1ee3c g\u00ec? Gi\u1edbi thi\u1ec7u qua v\u1ec1 trang F8 | H\u1ecdc l\u1eadp tr\u00ecnh Javascript c\u01a1 b\u1ea3n",
-                "slug": "javascript-co-the-lam-duoc-gi-gioi-thieu-qua-ve-trang-f8-hoc-lap-trinh-javasc",
-                "image": "https:\/\/i.ytimg.com\/vi\/0SJE9dYdpps\/maxresdefault.jpg",
-                "video": "0SJE9dYdpps",
-                "duration": 473,
-                "yt_view_count": 724959,
-                "yt_comment_count": 121,
-                "yt_like_count": 3931,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/0SJE9dYdpps\/maxresdefault.jpg",
-                "video_url": null
-            },
-            {
-                "id": 690,
-                "title": "ReactJS l\u00e0 g\u00ec? T\u1ea1i sao n\u00ean h\u1ecdc ReactJS?",
-                "slug": "reactjs-la-gi-tai-sao-nen-hoc-reactjs",
-                "image": "https:\/\/i.ytimg.com\/vi\/x0fSBAgBrOQ\/maxresdefault.jpg",
-                "video": "x0fSBAgBrOQ",
-                "duration": 641,
-                "yt_view_count": 401843,
-                "yt_comment_count": 354,
-                "yt_like_count": 3444,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/x0fSBAgBrOQ\/maxresdefault.jpg",
-                "video_url": null
-            },
-            {
-                "id": 533,
-                "title": "L\u00e0m sao \u0111\u1ec3 c\u00f3 thu nh\u1eadp cao v\u00e0 \u0111i xa h\u01a1n trong ng\u00e0nh IT?",
-                "slug": "lam-sao-de-co-thu-nhap-cao-va-di-xa-hon-trong-nganh-it",
-                "image": "https:\/\/i.ytimg.com\/vi\/oF7isq9IjZM\/maxresdefault.jpg",
-                "video": "oF7isq9IjZM",
-                "duration": 1540,
-                "yt_view_count": 82340,
-                "yt_comment_count": 239,
-                "yt_like_count": 3430,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/oF7isq9IjZM\/maxresdefault.jpg",
-                "video_url": null
-            },
-            {
-                "id": 51,
-                "title": "C\u00e1c th\u1ebb HTML th\u00f4ng d\u1ee5ng",
-                "slug": "cac-the-html-thong-dung",
-                "image": "https:\/\/i.ytimg.com\/vi\/AzmdwZ6e_aM\/maxresdefault.jpg",
-                "video": "AzmdwZ6e_aM",
-                "duration": 668,
-                "yt_view_count": 304434,
-                "yt_comment_count": 199,
-                "yt_like_count": 3162,
-                "image_url": "https:\/\/i.ytimg.com\/vi\/AzmdwZ6e_aM\/maxresdefault.jpg",
-                "video_url": null
-            }
-        ]
 
-        // PostItem.js
-        function PostItem(
-            { 
-                image,
-                title,
-                desc,
-                 }
-        ) {
+        function Input({ label, ...inputProps}) {
             return (
-                <div className="post-item">
-                    <img
-                        src={image}
-                        alt={title}
-                    />
-                    <h2 className="post-title">{title}</h2>
-                    <p className="post-desc">{desc}</p>                  
-                                   
+                <div>
+                    <label>{label}</label>
+                    <input {...inputProps} />
                 </div>
             )
+
+
+
         }
-        // App.js
         function App() {
+            const titleButton = ["Click meeeeeeeee", "let go"];
             return (
                 <div id="warpper">
-                   
-                    {blogsItems.map((item) => (
-                        <PostItem
-                            key={item.id}
-                            title={item.title}
-                            image={item.image}
-                            desc={item.slug}                            
+                    <br />
+                    <Input
+                        label="Username" 
+                        type="radio" 
+                        placeholder="Enter your username" 
+                        onFocus={() => console.log('Focused')}
+                    
                         />
-                    ))}
-                        
-                    )
-
+                    <Input data={cars}>
+                            {(item) =><li>{item}</li>  }
+                        </Input>
                 </div>
             )
         }
 
-        // const app = (
-        //     <div className="post-list" >
-        //       <PostItem/> 
-        //       <PostItem/> 
-        //       <PostItem/> 
-        //      </div>
-        // )
-        // const app = (
-        //     <div className="post-list" >
-        //         <div className="post-item">
-        //                 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*3ucbb4Za8LxXZNUT" alt="post" />
-        //                 <h2 className= "post-title"> aws</h2>
-        //                 <p className = "post-desc"> học aws</p>
-        //                 <p className ="post-published"> 2 ngày trước </p>
-        //         </div>
-        //      </div>
-        // )
-
-        // index.js
         ReactDOM.render(<App />, document.getElementById('root'));
     </script>
 </body>
